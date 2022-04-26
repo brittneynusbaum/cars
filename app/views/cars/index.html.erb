@@ -1,0 +1,9 @@
+<p>This is the cars index page</p>
+
+
+<% @cars.each do |car| %>
+<p>Id: <%= car.id %></p>
+<p>Make: <%= car.make %></p>
+<a href="/cars/<%= car.id %>">More info</a>
+<hr />
+<% end %>
