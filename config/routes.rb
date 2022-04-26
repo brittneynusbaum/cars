@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
+  resources :owners
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
   # root "articles#index"
 
-get "/cars" => "cars#index"
-get "/cars/new" => "cars#new"
-get "/cars/:id" => "cars#show"
-post "/cars" => "cars#create"
+  get "/cars" => "cars#index"
+  get "/cars/new" => "cars#new"
+  get "/cars/:id" => "cars#show"
+  post "/cars" => "cars#create"
 
 end
